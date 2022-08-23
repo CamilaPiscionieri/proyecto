@@ -1,0 +1,462 @@
+:root{
+
+  --color1: rgb(219,144,.5);
+  --color2: rgba(23,180,83,.0788);
+  --color3: rgba(11,194,211, 0.623);
+  --fondo: #f2f2f2;
+  --titulos: 33px;
+  --subtitulos: 23px;
+  --margenes: 60px;
+  --espacios: 10px;
+  --espacios-contenido: 45px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* boody*/
+body{
+    font-family: 'open sans ';
+    background: var(--fondo);
+
+}
+
+img{
+  vertical-align: top;
+}
+
+/* Preload, carga de corazon*/
+.hidden{
+overflow: hidden;
+}
+
+.centrar{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #fcf;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #fcf;
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  /* FIN Preload, carga de corazon*/
+
+  /* Header */
+
+  header{
+   width: 100%;
+   height: 600px;
+   background: linear-gradient(to bottom, rgba(211, 20, 100, 0.664),
+   rgba(206, 29, 241, 0.6),
+   rgba(86, 7, 150, 0.45)
+   ), url(img/gatico1.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+  }
+
+  nav{
+    width: 100%;
+   position: fixed;
+   box-shadow: 0 0 20px 0 rgb(0, 0, 0, .5);
+
+  }
+
+  .nav1{
+    background: transparent;
+    height: 80px;
+    color: #fff;
+  }
+
+  .nav2{
+    background: var(--fondo);
+    height: 100px;
+    color: #000;
+  }
+
+.contenedor-nav{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  height: inherit;
+  overflow: hidden;
+}
+
+nav .enlaces a{
+  display: inline-block;
+  padding: 5px;
+  margin-right: 17px;
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: inherit;
+}
+
+nav .enlaces a:hover{
+  border-bottom: 3px solid #1498a4;
+  transition: 0.6s;
+}
+
+.logo, .logo img{
+  height: 80px;
+}
+
+.icono{
+  display: none;
+  font-size: 24px;
+  padding: 23.5px 20px;
+}
+
+.textos{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.textos>h1{
+  font-size: 80px;
+
+}
+
+.textos>h2{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/*  iicio main */
+
+/*  main section 1 */
+
+.contenedor{
+  margin: auto;
+  padding: var(--margenes) 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenedor h3{
+  font-size: var(--titulos);
+  color: var(--color1);
+  margin-bottom: var(--espacios);
+}
+
+.contenedor p{
+  font-size: var(--subtitulos);
+  font-weight: 300;
+  color: var(--color1);
+
+}
+
+.after::after{
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 100px;
+  height: 2px;
+  background: var(--color1);
+  margin-bottom: var(--espacios-contenido);
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content-card{
+  width: 31%;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  overflow: hidden;
+  height: 400px;
+}
+
+.people{
+  height: 80%;
+
+}
+
+
+.content-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-team{
+  height: 10%;
+  width: 100%;
+  padding: var(--espacios) 0;
+
+}
+
+/*  main section 2 */
+
+.abaut{
+ background: url(img/teclad1.jpg);
+ height: auto;
+}
+
+.servicios{
+  display:flex;
+  justify-content: space-around;
+  color: #fff;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.caja-servicios>h4{
+margin-bottom: var(--espacios);
+}
+
+.caja-servicios>p{
+  text-align: center;
+}
+
+/*  main section 3 */
+
+.botones-work{
+  overflow: hidden;
+}
+
+.botones-work li{
+  display: inline-block;
+  text-align: center;
+  margin-left: var(--espacios);
+  margin-bottom: var(--espacios-contenido);
+  padding: 6px 12px;
+  border: 1px solid var(--color1);
+  list-style: none;
+  color: var(--color1);
+}
+
+.botones-work li:hover{
+  background: var(--color1);
+  color: #fff;
+  cursor: pointer;
+}
+
+.botones-work .active{
+  background: var(--color1);
+  color: #fff;
+}
+
+.galeria-work{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galeria-work .cont-work{
+  width: 30%;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: var(--espacios-contenido);
+}
+
+.img-work{
+  height: 90%;
+  width: 100%;
+}
+
+.img-work img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textos-work{
+  height: 10%;
+}
+
+.textos-work h4{
+line-clamp: 30px;
+font-weight: 300;
+text-align: center;
+}
+
+
+/*  footer */
+
+footer{background: url(img/teclad1.jpg);}
+
+.marca-logo{
+  width: 40%;
+  margin: auto;
+  margin-bottom: var(--espacios);
+}
+
+.marca-logo img{
+ width: 20%;
+
+}
+
+.iconos{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.fa-brands{
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: var(--espacios);
+  display: inline-block;
+}
+
+footer p{
+  margin-top: var(--espacios);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 700px){
+
+.nav2{
+  color: #fff;
+}
+
+.icono{
+  display: block;
+  cursor: pointer;
+}
+
+.enlaces{
+  position: fixed;
+  top: 80px;
+  background: #2c3e50;
+  left: 0;
+  height: 100%;
+  transition: 1s;
+  width: 0;
+  overflow: hidden;
+}
+
+.enlaces a{
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+  background: #34495e;
+  color: #fff;
+}
+
+.textos>h1{font-size: 70px;}
+.textos>h2{font-size: 35px;}
+
+
+.caja-servicios{
+  width: 90%;
+  margin-bottom: var(--margenes);
+}
+
+.content-card{
+  width: 48%;
+  margin-bottom: var(--margenes);
+}
+
+:root{
+  --margenes: 30px;
+}
+
+
+}
+
+@media screen and (max-width: 550px){
+  :root{
+    --espacios-contenido: 20px;
+  }
+
+.galeria-work .cont-work {
+  width: 90%;
+}
+
+  .content-card{
+    width: 90%;
+  }
+
+  .caja-servicios{
+    width: 90%;
+    margin-bottom: var(--margenes);
+  }
+
+  .iconos{
+margin: auto;
+  }
+
+}
