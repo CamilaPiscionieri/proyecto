@@ -1,8 +1,8 @@
 :root{
 
   --color1: rgb(219,144,.5);
-  --color2: rgba(23,180,83,.0788);
-  --color3: rgba(11,194,211, 0.623);
+  --color2: rgba(201, 63, 178, 0.596);
+  --color3: rgba(170, 90, 194, 0.877);
   --fondo: #f2f2f2;
   --titulos: 33px;
   --subtitulos: 23px;
@@ -207,14 +207,14 @@ nav .enlaces a:hover{
 
 .contenedor h3{
   font-size: var(--titulos);
-  color: var(--color1);
+  color: var(--color3);
   margin-bottom: var(--espacios);
 }
 
 .contenedor p{
   font-size: var(--subtitulos);
   font-weight: 300;
-  color: var(--color1);
+  color: var(--color3);
 
 }
 
@@ -225,7 +225,7 @@ nav .enlaces a:hover{
   margin-top: var(--espacios);
   width: 100px;
   height: 2px;
-  background: var(--color1);
+  background: var(--color2);
   margin-bottom: var(--espacios-contenido);
 }
 
@@ -247,6 +247,11 @@ nav .enlaces a:hover{
 
 }
 
+.people2{
+  height: 100%;
+}
+
+
 
 .content-card img{
   width: 100%;
@@ -264,8 +269,10 @@ nav .enlaces a:hover{
 /*  main section 2 */
 
 .abaut{
- background: url(img/teclad1.jpg);
+ background: url(img/oscuro.png);
  height: auto;
+ background-position: center;
+ background-size: cover;
 }
 
 .servicios{
@@ -296,19 +303,19 @@ margin-bottom: var(--espacios);
   margin-left: var(--espacios);
   margin-bottom: var(--espacios-contenido);
   padding: 6px 12px;
-  border: 1px solid var(--color1);
+  border: 1px solid var(--color2);
   list-style: none;
-  color: var(--color1);
+  color: var(--color2);
 }
 
 .botones-work li:hover{
-  background: var(--color1);
+  background: var(--color3);
   color: #fff;
   cursor: pointer;
 }
 
 .botones-work .active{
-  background: var(--color1);
+  background: var(--color3);
   color: #fff;
 }
 
@@ -350,7 +357,12 @@ text-align: center;
 
 /*  footer */
 
-footer{background: url(img/teclad1.jpg);}
+footer{
+  background: url(img/oscuro.png);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+}
 
 .marca-logo{
   width: 40%;
@@ -368,6 +380,7 @@ footer{background: url(img/teclad1.jpg);}
   margin: auto;
   justify-content: space-around;
   width: 100%;
+  background: none;
 }
 
 .fa-brands{
@@ -375,6 +388,7 @@ footer{background: url(img/teclad1.jpg);}
   color: #fff;
   margin-bottom: var(--espacios);
   display: inline-block;
+  background: none;
 }
 
 footer p{
