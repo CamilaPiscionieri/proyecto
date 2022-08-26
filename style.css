@@ -412,7 +412,7 @@ footer p{
 .enlaces{
   position: fixed;
   top: 80px;
-  background: #2c3e50;
+  background: rgba(211, 20, 100, 0.568);
   left: 0;
   height: 100%;
   transition: 1s;
@@ -426,7 +426,7 @@ footer p{
   height: 50px;
   padding: 20px;
   text-align: center;
-  background: #34495e;
+  background: rgba(211, 20, 100, 0.877);
   color: #fff;
 }
 
@@ -457,7 +457,7 @@ footer p{
   }
 
 .galeria-work .cont-work {
-  width: 90%;
+  width: 100%;
 }
 
   .content-card{
@@ -473,4 +473,13 @@ footer p{
 margin: auto;
   }
 
+  .nav1{
+    background: transparent;
+    height: 70px;
+    color: #fff;
+  }
+
+  .logo, .logo img{
+    height: 50px;
+  }
 }
