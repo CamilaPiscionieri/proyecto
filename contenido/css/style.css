@@ -526,11 +526,15 @@ background-color: #fff;
 }
 
 .skills__react{
-  width: 20%;
+  width: 30%;
 }
 
-.skills__react{
-  width: 20%;
+.skills__angular{
+  width: 30%;
+}
+
+.skills__jque{
+  width: 60%;
 }
 
 .skills__php{
