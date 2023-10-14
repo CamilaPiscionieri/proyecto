@@ -9,7 +9,7 @@ let botones = document.getElementById('btn-header');
 let cerrado = true;
 
 function menus(){
-let Desplazamiento_Actual = window.pageYOffset;
+let Desplazamiento_Actual = window.scrollY;
 
 if(Desplazamiento_Actual <= 300){
 nav.classList.remove('nav2');
@@ -57,7 +57,7 @@ window.addEventListener('click', function(e){
 });
 
 window.addEventListener('scroll', function(){
-    console.log(window.pageYOffset);
+    console.log(window.scrollY);
     menus();
 });
 
